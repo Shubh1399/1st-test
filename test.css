@@ -1,0 +1,675 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    height: 83px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 25px;
+    position: fixed;
+}
+
+.nav-link ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-link ul a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 22px;
+    font-family: 'Kaushan Script';
+    position: relative;
+}
+.active{
+    color: wheat;
+    border-bottom: 2px solid black;
+}
+.nav-link ul a::after {
+
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.9s;
+
+}
+.nav-link ul a:hover::after{
+   width: 100%;
+}
+.nav-link ul a:hover{
+    color: wheat;
+}
+
+
+
+
+.card1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("build.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#main {
+
+    max-width: 57%;
+    position: absolute;
+    color: azure;
+    text-align: center;
+    left: 334px;
+    top: 346px;
+}
+
+
+
+#main h1 {
+    font-size: 50px;
+}
+
+
+.second_nd {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 63px;
+}
+
+.about {
+
+    width: 50%;
+    /*   padding-left: 100px;
+padding-top: 94px;
+padding-right: 80px;*/
+}
+
+ .about_cont {
+   
+    padding-top: 85px;
+}
+
+.about_cont p {
+    margin-top: 13px;
+    line-height: 23px;
+}
+
+.about_img {
+    width: 50%;
+    margin-left: 132px;
+
+
+}
+
+.about_img img {
+    width: 95%;
+    border-radius: 20px;
+
+}
+
+.pics {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.photo {
+    width: 29%;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+.name{
+    margin: 10px 0;
+}
+
+.card3 {
+    margin:30px 0 20px 0;
+}
+
+.card3 h2 {
+
+    margin: 5px 0 20px 144px;
+}
+.card4{
+    margin: 55px 0;
+}
+.card4 h2{
+    margin: 19px 0;
+margin-left: 133px;
+}
+.scroll{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    
+    
+}
+.scroll::-webkit-scrollbar{
+    width: 0px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color:white;
+}
+.mail{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+}
+.mail_cont{
+    width: 60%;
+    padding-left: 42px;
+    padding-top:35px ;
+}
+.mail_cont h2{
+    font-size: 30px;
+}
+.mail_cont p{
+    margin: 5px 0 55px 0;
+word-spacing: 1px;
+font-size: 18px;
+letter-spacing: 1px;
+}
+.mail_img{
+    width: 40%;
+}
+.mail_img img{
+    margin-left: 87px;
+}
+.mail_cont button{
+    padding: 21px 89px 20px 22px;
+          font-size: 20px;
+          border-radius: 10px;
+}.mail_cont a{
+
+    padding: 20px 5px 20px 5px;
+    border: 1 px solid #3498db;
+    border-radius: 5px;
+    margin-left: 40px;
+     font-size: 21px;
+    letter-spacing: 1px;
+     text-decoration: none;
+     cursor: pointer;
+     color: teal;
+     transition: 0.8s;
+     overflow: hidden;
+    
+}.mail_cont a:hover{
+    color:red;
+    
+
+}
+
+.card6{
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.fot{
+    width: 65%;
+   padding-top: 117px;
+    display: flex;
+    margin:10px  auto;
+    border-bottom: 5px solid white;
+}
+.lfot{
+    width: 50%;
+}
+.rfot{
+    width: 50%;
+    padding-left: 99px;
+}
+.follow{
+    margin-top: 167px;
+}
+.follow h4{
+    font-size: 20px;
+}
+.follow ul{
+display: flex;
+list-style-type: none;
+
+margin-top: 15px;
+
+}
+.follow ul li{
+padding-right: 20px;
+font-size: 20px;
+color: rgba(233, 229, 229, 0.5);
+}
+.link ul {
+    display: flex;
+    list-style: none;
+    margin:16px 0 ;
+
+}
+
+
+.link ul a {
+    color: cornsilk;
+    text-decoration: none;
+    margin: 0 25px 0 0;
+    font-size: 22px;
+    font-family: 'Kaushan Script';
+}
+.link p{
+    font-size: 18px;
+}
+.bottom{
+margin-top: 50px;
+}
+.top p{
+margin: 17px 0;
+color: red;
+line-height: 31px;
+font-size: 20px;
+}
+#arrow{
+position: absolute;
+right: 150px;
+bottom: 26px;
+font-size: 65px;
+}
+.fot_bottom{
+width: 65%;
+    
+    margin:0 auto;
+}
+.fot_bottom p{
+text-align: center;
+font-size: 20px;
+
+}#icon{
+float: right;
+display: none;
+}
+.followb{
+display: none;
+}
+
+
+@media(max-width:1290px) and (min-width:1100px){
+#main{
+    max-width: 60%;
+
+    left: 275px;
+    top: 300px;
+}
+.link ul a{
+    margin:0 7px 0 0 ;
+}
+#arrow{
+    position: absolute;
+    right: 80px;
+    bottom: 26px;
+    font-size: 65px;
+}
+.mail_cont a {
+
+margin-left: 22px;
+
+}
+.about_cont {
+padding-top: 10px;
+}
+}
+@media(max-width:1099px) and (min-width:900px){
+#main {
+    max-width: 74%;
+left: 103px;
+top: 300px;
+}
+
+.nav-link ul a {
+
+margin: 0 20px;
+
+}
+.link ul a {
+
+margin: 0 8px 0 0;
+font-size: 18px;
+
+}
+.about_cont {
+padding-top: 0;
+}
+.about_img {
+
+ margin-left: 0; 
+}
+#arrow {
+
+right: 40px;
+bottom: 45px;
+
+}
+.mail_cont button {
+padding: 21px 19px 20px 22px;
+font-size: 20px;
+}
+.mail_cont a {
+padding: 20px 5px 20px 5px;
+
+ margin-left: 0;
+
+}
+
+}
+@media(max-width:899px) and (min-width:768px){
+#main {
+    max-width: 88%;
+left: 42px;
+top: 300px;
+}
+.nav-link ul a {
+
+margin: 0 11px;
+font-size: 22px;
+
+}
+.second_nd {
+
+margin-top: 28px;
+}
+.about_cont {
+ padding-top: 0; 
+}
+.about_img {
+
+ margin-left: 0;
+padding-top: 35px;
+}
+.mail_cont {
+
+ padding-left: 0;
+
+}
+.mail_cont h2 {
+font-size: 28px;
+}
+.mail_cont button {
+padding: 21px 24px 20px 22px;
+font-size: 18px;
+}
+.mail_cont a {
+padding: 20px 0px 20px 0px;
+
+margin-left: 14px;
+font-size: 18px;
+
+}
+#arrow {
+
+ display: none;
+
+}
+.rfot {
+width: 50%;
+padding-left: 44px;
+}
+.link ul a {
+
+margin: 0 8px 0 0;
+font-size: 19px;
+
+}
+
+}
+@media(min-width:425px) and (max-width:767px){
+.follow{
+    display: block;
+    margin-top: 272px;
+}
+.followb{
+    display: none;
+}
+.link p {
+display: none;
+}
+.link ul {
+display: block;
+list-style: none;
+margin: 16px 0;
+}
+.link ul a {
+
+font-size: 17px;
+
+}
+.fot {
+width: 80%;
+padding-top:52px ;
+display: flex;
+
+}
+.rfot {
+width: 50%;
+padding-left: 20px;
+}
+
+}
+@media(max-width:423px){
+.fot {
+width: 100%;
+padding-top: 30px;
+padding-left: 23px;
+display: block;
+margin: 10px auto;
+border-bottom: 5px solid white;
+}
+.lfot{
+    width: 100%;
+}
+.rfot{
+    width: 100%;
+    padding-left: 0;
+    padding-top: 64px;
+}
+.top p {
+ margin: 1px 0; 
+ font-size: 17px;
+
+}
+.fot_bottom p {
+text-align: center;
+font-size: 16px;
+
+padding: 8px 0;
+}
+.link p {
+display: none;
+}
+.link ul {
+display: block;
+list-style: none;
+margin: 16px 0;
+}
+.link ul a {
+
+font-size: 17px;
+
+}
+.follow{
+display: none;
+}
+.followb{
+display: block;
+}
+.followb h4{
+    font-size: 24px;
+}
+.followb ul{
+display: flex;
+list-style-type: none;
+
+margin-top: 15px;
+
+}
+.followb ul li{
+padding-right: 20px;
+font-size: 20px;
+color: rgba(233, 229, 229, 0.5);
+}
+
+}
+@media(max-width:767px) {
+.nav-link ul {
+display: none;
+
+}
+#main {
+max-width: 100%; 
+
+padding: 0 40px;
+ left: 0; 
+top: 255px;
+}
+#main h1 {
+font-size: 32px;
+}
+.second_nd {
+width: 100%;
+display: block;
+
+padding: 0 25px;
+margin-top: 63px;
+}
+.card3 {
+
+padding: 0 25px;
+}
+.about {
+width: 100%;
+}
+.about_cont {
+ padding-top: 0; 
+}
+.about_img {
+width: 100%;
+
+margin: 20px 0 20px 0;
+}
+.card5{
+margin: 0 10px;
+}
+.mail_cont h2 {
+font-size: 23px;
+text-align: center;
+}
+.pics {
+display: block;
+width: 100%;
+ margin: 0;
+
+}.card4{
+margin: 55px 10px;
+}
+
+.photo {
+width: 100%;
+margin-bottom: 37px;
+box-shadow: 5px 10px 8px 10px #888888;
+border-radius: 10px;
+}
+.photo img {
+width: 100%;
+border-radius: 10px;
+}
+.mail {
+width: 100%;
+ margin: 0; 
+display: block;
+}
+.mail_cont {
+width: 100%;
+ padding-left: 0; 
+padding-top: 35px;
+}
+.mail_cont h2 {
+font-size: 23px;
+}
+.mail_cont button {
+padding: 12px 19px 12px 19px;
+
+width: 80%;
+margin: 0;
+margin: 0 10%;
+display: inline-block;
+
+}
+.mail_cont a {
+
+display: inline-block;
+
+width: 80%;
+margin: 10px 10%;
+
+font-size: 23px;
+text-align: center;
+
+}
+.mail_img {
+width: 100%;
+margin-top: 71px;
+}
+.mail_img img {
+margin-left: 50px;
+}
+.card3 h2 {
+margin: 0;
+text-align: center;
+margin-bottom:21px ;
+}
+#arrow {
+
+display: none;
+
+}
+.nav-link ul {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    top:80px;
+    left: 0;
+    text-align: center;
+    list-style: none;
+
+}
+.nav-link ul li{
+    margin: 15px 0;
+font-size: 30px;
+}
+.active{
+    border-bottom: 2px solid white;
+}
+#icon{
+
+    display: block;
+margin-right: 52px;
+font-size: 24px;
+}
+}
